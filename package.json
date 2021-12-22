@@ -1,0 +1,29 @@
+{
+  "name": "rest-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "preview": "npm-run-all --parallel dev sync",
+    "dev": "nodemon app.js",
+    "sync": "browser-sync start -p 'http://localhost:3000/'  --files 'public' 'views'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mng84/xhr-fetch-axios-intro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mng84/xhr-fetch-axios-intro/issues"
+  },
+  "homepage": "https://github.com/mng84/xhr-fetch-axios-intro#readme",
+  "dependencies": {
+    "browser-sync": "^2.27.7",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15",
+    "npm-run-all": "^4.1.5"
+  }
+}

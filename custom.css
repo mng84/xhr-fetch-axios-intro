@@ -6,6 +6,12 @@ body {
   margin: 0;
 }
 
+#c-container {
+  width: 100%;
+  min-height: 1px;
+  padding: 20px;
+}
+
 button {
   font: inherit;
   background: #5102ac;
